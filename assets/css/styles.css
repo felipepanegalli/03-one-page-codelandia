@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
 :root {
+    --purple: #6c63ff;
+    --purple-light: #d7d4ff;
     --white: #ffffff;
     --white-200: #f9f9f9;
-    --gray: #474747;
-    --gray-light: #EBE9EA;
-    --black-light: #181818;
+    --gray: #555555;
+    --gray-dark: #2a2a2a;
 
-    --font-montserrat: Montserrat, sans-serif;
+    --font-merriweather: 'Merriweather', serif;
+    --font-lato: 'Lato', sans-serif;
 }
 
 body {
