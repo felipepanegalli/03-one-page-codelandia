@@ -7,11 +7,17 @@
             </template>
             <template v-else>
                 <div v-for="post in posts">
-                    <CardsCard :img-src="post.urlToImage" :title="post.title" :subtitle="post.description"/>
+                    <CardsCard
+                        :img-src="post.urlToImage"
+                        :title="post.title"
+                        :subtitle="post.description"
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                    />
                 </div>
             </template>
         </div>
-        <LayoutTheFooter />
+        <LayoutTheFooter/>
     </LayoutContainer>
 </template>
 
@@ -21,8 +27,10 @@
 
 <script>
 import axios from "axios";
+import aos from "./mixins/aos";
 
 export default {
+    mixins: [aos],
     async setup() {
         const pending = ref(true);
         const posts = ref([]);
