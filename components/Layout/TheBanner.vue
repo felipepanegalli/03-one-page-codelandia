@@ -1,11 +1,11 @@
 <template>
     <div class="banner">
         <div class="left center">
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu massa sit amet augue
-                consectetur
-                ullamcorper non ac massa.</p>
-            <ButtonsDefault />
+            <h1>TechLow News</h1>
+            <p class="my-3">
+                O seu portal com informações, artigos e notícias sobre tecnologia, games, NFT e muito mais.
+            </p>
+            <Button text="Ver mais..." @click="seeMore"/>
         </div>
         <div class="right center">
             <img src="~/assets/images/gift.svg" alt="Gift illustration">
@@ -14,12 +14,17 @@
 </template>
 
 <script>
+import Button from "../Buttons/Button";
+
 export default {
     name: 'TheBanner',
+    components: {Button},
     setup() {
+        function seeMore() {
+            alert('Clicou mas não valeu ashaushas...')
+        }
 
-
-        return {}
+        return {seeMore}
     }
 }
 </script>
@@ -48,6 +53,7 @@ export default {
             max-width: 380px;
             font-size: 1.125rem;
             line-height: 2rem;
+            font-weight: 400;
         }
     }
 
