@@ -3,7 +3,7 @@
 [![Latest Stable Version](https://badgen.net/badge/Vue/3.0+/green)](https://badgen.net/packagist/lang/vue)
 [![Nuxt Version Require](https://badgen.net/badge/Nuxt/3.x/green)](https://badgen.net/badge/nuxt/3.x/green)
 
-[comment]: <> (<img src="./assets/images/cover.png" alt="capa do projeto" />)
+<img src="./assets/images/cover.png" alt="capa do projeto" />
 <p><a href="https://github.com/iuricode" target="_blank">Layout desenvolvido por Iuri Silva :: Codelândia</a></p>
 
 
